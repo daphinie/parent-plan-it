@@ -1,6 +1,7 @@
-import { Dimensions, View, Text, StyleSheet, Pressable } from 'react-native';
+import { Dimensions, View, Text, StyleSheet, Pressable, Image } from 'react-native';
 import React from 'react';
 import { useFonts } from 'expo-font';
+import ProgressBar from 'react-native-progress/Bar';
 
 const SCREENHEIGHT = Dimensions.get('window').height;
 const SCREENWIDTH  = Dimensions.get('window').width;
@@ -29,8 +30,16 @@ const Home = () => {
       
       <View style={styles.card}>
         <View>
-
-          <Text style={styles.goalHeader}>John's Education</Text>
+          <View style={styles.cardPicTitle}>
+            <View style={styles.profilePic}>
+              <Image source={require('../../../assets/favicon.png')} width={10} height={10}/>
+            </View>
+            
+            <Text style={styles.goalHeader}>John's Education</Text> 
+          </View>
+          
+          
+          <ProgressBar style={styles.bar} width={270} height={20} borderColor={'#FFFFFF'} color={'#49416D'} unfilledColor={'#FFFFFF'} progress={0.3}/>
         </View>
         
       </View>
@@ -43,8 +52,17 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
+  cardPicTitle: {
+    display: 'flex',
+    flexDirection: 'row'
+  },
+
+  profilePic: {
+    paddingRight: 20
+  },
+
   container: {
-      backgroundColor: '#fffffa',
+      backgroundColor: '#FFFFFF',
       height: SCREENHEIGHT,
       width: SCREENWIDTH,
       padding: 20
@@ -64,13 +82,14 @@ const styles = StyleSheet.create({
   header: {
     fontFamily: 'PTSans',
     color: '#49416D',
-    fontSize: 30,
+    fontSize: 30
   },
 
   goalHeader: {
     fontFamily: 'PTSans',
     color: '#49416D',
     fontSize: 25,
+    paddingBottom: 30
   },
 
   button: {
