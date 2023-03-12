@@ -31,51 +31,56 @@ export default function InfoPage() {
     <View style={styles.container}>
       <Text style={styles.title}>About you</Text>
 
-      <Text style={[styles.label, styles.textColor]}>First Name:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>First Name:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={firstName}
         onChangeText={setFirstName}
       />
 
-      <Text style={[styles.label, styles.textColor]}>Last Name:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>Last Name:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={lastName}
         onChangeText={setLastName}
       />
 
-      <Text style={[styles.label, styles.textColor]}>Age:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>Age:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={age}
         keyboardType="numeric"
         onChangeText={setAge}
       />
 
-      <Text style={[styles.label, styles.textColor]}>City:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>City:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={city}
         onChangeText={setCity}
       />
 
-      <Text style={[styles.label, styles.textColor]}>Country:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>Country:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={country}
         onChangeText={setCountry}
       />
 
-      <Text style={[styles.label, styles.textColor]}>Email:</Text>
+      <Text style={[styles.labelinput, styles.textColor]}>Email:</Text>
       <TextInput
-        style={[styles.input, styles.textColor]}
+        style={[styles.label, styles.textColor]}
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
       />
 
-      <Button title="Submit" onPress={handleSubmit} />
+      <Button
+        title="Submit"
+        onPress={handleSubmit}
+        color="#49416D"
+        style={styles.button}
+      />      
     </View>
   );
 }
@@ -87,8 +92,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 40,
-    fontFamily: 'PTSans',
+    fontSize: 37,
+    //fontFamily: 'PTSans',
     fontWeight: 'bold',
     marginBottom: 20,
     color: '#49416D',
@@ -96,8 +101,30 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 18,
     fontWeight: 'bold',
+    width: 375,
+    height: 50,
+    borderRadius : 20,
+    borderColor: '#49416D',
+    borderWidth: 1,
+    backgroundColor: '#F5F5F5',
+    marginLeft : 10,
+    paddingHorizontal: 10,
+    //fontFamily: 'PTSans',
+    textAlign: 'left',
+    alignSelf: 'stretch',
+  },
+  labelinput: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    width: 375,
+    height: 30,
+    borderRadius : 20,
+    backgroundColor: '#F5F5F5',
     marginBottom: 0,
-    fontFamily: 'PTSans',
+    marginTop: 10,
+    marginLeft : 0,
+    paddingHorizontal: 10,
+    //fontFamily: 'PTSans',
     textAlign: 'left',
     alignSelf: 'stretch',
   },
@@ -109,8 +136,23 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     paddingHorizontal: 10,
   },
+  button: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    width: 375,
+    height: 30,
+    borderRadius : 20,
+    backgroundColor: '#F5F5F5',
+    marginBottom: 30,
+    marginTop: 30,
+    marginLeft : 0,
+    paddingHorizontal: 10,
+    //fontFamily: 'PTSans',
+    textAlign: 'left',
+    alignSelf: 'stretch',
+  },
   textColor: {
-    fontFamily: 'PTSans',
+    //fontFamily: 'PTSans',
     color: '#49416D',
   },
 });
