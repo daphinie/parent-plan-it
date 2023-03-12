@@ -6,10 +6,13 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
+    "splash":
+    {
       "image": "./assets/logo.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#d1d7e2",
+      "showDuration": 5000, 
+      "hideDuration": 1000 
     },
     "assetBundlePatterns": [
       "**/*"
