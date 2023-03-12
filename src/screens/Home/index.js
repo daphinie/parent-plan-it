@@ -16,11 +16,22 @@ const Home = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Goals</Text>
-      <Pressable style={styles.button}>
-        <Text style={styles.buttonText}>+</Text>
-      </Pressable>
-      <Text style={styles.header}>Current</Text>
+
+      <View>
+        <Text style={styles.header}>Goals</Text>
+
+        <View style={styles.addGoalContainer}>
+          <Pressable style={styles.button}>
+            <Text style={styles.buttonText}>+</Text>
+          </Pressable>
+        </View>
+      </View>
+      
+      <View style={styles.card}>
+        <Text style={styles.header}>Current</Text>
+      </View>
+
+      
     </View>
   )
 }
@@ -32,7 +43,18 @@ const styles = StyleSheet.create({
       backgroundColor: '#fffffa',
       height: SCREENHEIGHT,
       width: SCREENWIDTH,
-      padding: 20,
+      padding: 20
+  },
+
+  addGoalContainer: {
+    padding: 40,
+    display: 'flex'
+  },
+
+  card: {
+    backgroundColor: '#D1D7E2',
+    padding: 40,
+    borderRadius: 20
   },
 
   header: {
@@ -46,11 +68,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 32,
-    borderRadius: 4,
-    backgroundColor: '#99AEDD'
+    borderRadius: 15,
+    backgroundColor: '#49416D',
+    width: 90,
+    height: 90,
+    alignSelf: 'flex-end'
   },
 
   buttonText: {
-    color: '#49416D'
+    color: '#FFFFFF',
+    fontSize: 40
   }
 })
