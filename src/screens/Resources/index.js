@@ -38,13 +38,13 @@ const Resources = () => {
 
     {/* FINANCIAL AID */}
     <View style={[styles.resourceContainer,{marginTop: 15}]}>
-      <Text style={styles.resourceCategoryTitle}> Government Financial Aid</Text>
+      <Text style={styles.resourceCategoryTitle}>Government Financial Aid</Text>
       <ScrollView horizontal={true}>
       <View style={[styles.linkMasterContainer, {marginTop:2}]}>
         {/* Government FINANCIAL AID: IMAGE 1: BC Student Loan Program */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BC Student Loan Program </Text>
+          <Text style={styles.linkSingleTitle}>BC Student Loan Program </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -52,7 +52,7 @@ const Resources = () => {
         {/* Government FINANCIAL AID: IMAGE 2: _______________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BC Temporary Rental Supplement </Text>
+          <Text style={styles.linkSingleTitle}>BC Temporary Rental Supplement </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -60,7 +60,7 @@ const Resources = () => {
         {/* Government FINANCIAL AID: IMAGE 3: _______________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BC Climate Action Tax Credit </Text>
+          <Text style={styles.linkSingleTitle}>BC Climate Action Tax Credit </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -68,7 +68,7 @@ const Resources = () => {
         {/* Government FINANCIAL AID: IMAGE 4: _______________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BC Housing Rental Assistance Program </Text>
+          <Text style={styles.linkSingleTitle}>BC Housing Rental Assistance Program </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -81,13 +81,13 @@ const Resources = () => {
     {/* ------------------------------------------------------------- */}
 
     <View style={[styles.resourceContainer, { marginTop: 15}]}>
-      <Text style={styles.resourceCategoryTitle}> Academic Financial Aid</Text>
+      <Text style={styles.resourceCategoryTitle}>Academic Financial Aid</Text>
       <ScrollView horizontal={true}>
       <View style={[styles.linkMasterContainer, {marginTop:2}]}>
         {/* cademic Financial Aid: IMAGE 1: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> Irving K. Barber British Columbia Scholarship Society </Text>
+          <Text style={styles.linkSingleTitle}>Irving K. Barber British Columbia Scholarship Society </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -95,7 +95,7 @@ const Resources = () => {
         {/* cademic Financial Aid: IMAGE 2: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BC Excellence Scholarship </Text>
+          <Text style={styles.linkSingleTitle}>BC Excellence Scholarship </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -103,7 +103,7 @@ const Resources = () => {
         {/* cademic Financial Aid: IMAGE 3: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> Coast Capital Savings Education Awards </Text>
+          <Text style={styles.linkSingleTitle}>Coast Capital Savings Education Awards </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -111,7 +111,7 @@ const Resources = () => {
         {/* cademic Financial Aid: IMAGE 4: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> $3,500 BC Hydro Sscholarship Program </Text>
+          <Text style={styles.linkSingleTitle}>$3,500 BC Hydro Scholarship Program </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -123,13 +123,13 @@ const Resources = () => {
     {/* ------------------------------------------------------------- */}
     
     <View style={[styles.resourceContainer, { marginTop: 15}]}>
-      <Text style={styles.resourceCategoryTitle}> Financial Instituition Aid</Text>
+      <Text style={styles.resourceCategoryTitle}>Financial Instituition Aid</Text>
       <ScrollView horizontal={true}>
       <View style={[styles.linkMasterContainer, {marginTop:2}]}>
         {/* Financial Instituition Aid: IMAGE 1: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> TD Student Relief Fund </Text>
+          <Text style={styles.linkSingleTitle}>TD Student Relief Fund </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -137,7 +137,7 @@ const Resources = () => {
         {/* Financial Instituition Aid: IMAGE 2: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> BMO Student Relief Program </Text>
+          <Text style={styles.linkSingleTitle}>BMO Student Relief Program </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -145,7 +145,7 @@ const Resources = () => {
         {/* Financial Instituition Aid: IMAGE 3: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> CIBC Education Line of Credit </Text>
+          <Text style={styles.linkSingleTitle}>CIBC Education Line of Credit </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
@@ -153,7 +153,7 @@ const Resources = () => {
         {/* Financial Instituition Aid: IMAGE 4: ____________ */}
         <TouchableOpacity onPress={handlePress}>
         <View style={[styles.linkSingleContainer, {marginTop:2}]}>
-          <Text style={styles.linkSingleTitle}> Vancity Bright Future Program </Text>
+          <Text style={styles.linkSingleTitle}>Vancity Bright Future Program </Text>
           <Image source={imageSource} style={styles.image} />
         </View>
         </TouchableOpacity>
