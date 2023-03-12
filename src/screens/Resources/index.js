@@ -33,6 +33,9 @@ const Resources = () => {
       <ScrollView contentOffset={{y: containerHeight}}>
       <Text style={styles.header}> Resources </Text>
 
+
+    {/* ------------------------------------------------------------- */}
+
     {/* FINANCIAL AID */}
     <View style={[styles.resourceContainer,{marginTop: 20}]}>
       <Text style={styles.resourceCategoryTitle}> Financial Aid</Text>
@@ -47,18 +50,70 @@ const Resources = () => {
         </TouchableOpacity>
       </View>
       </ScrollView>
+
+      <ScrollView horizontal={true}>
+      <View style={[styles.linkMasterContainer, {marginTop:2}]}>
+        {/* FINANCIAL AID: IMAGE 2: _______________ */}
+        <TouchableOpacity onPress={handlePress}>
+        <View style={[styles.linkSingleContainer, {marginTop:2}]}>
+          <Text style={styles.linkSingleTitle}> _______________ </Text>
+          <Image source={imageSource} style={styles.image} />
+        </View>
+        </TouchableOpacity>
+      </View>
+      </ScrollView>
+
     </View>
+
+    {/* ------------------------------------------------------------- */}
 
     <View style={[styles.resourceContainer, { marginTop: 20}]}>
       <Text style={styles.resourceCategoryTitle}> Academic Financial Aid</Text>
+      <ScrollView horizontal={true}>
+      <View style={[styles.linkMasterContainer, {marginTop:2}]}>
+        {/* cademic Financial Aid: IMAGE 1: ____________ */}
+        <TouchableOpacity onPress={handlePress}>
+        <View style={[styles.linkSingleContainer, {marginTop:2}]}>
+          <Text style={styles.linkSingleTitle}> ____________ </Text>
+          <Image source={imageSource} style={styles.image} />
+        </View>
+        </TouchableOpacity>
+      </View>
+      </ScrollView>
     </View>
+
+    {/* ------------------------------------------------------------- */}
     
     <View style={[styles.resourceContainer, { marginTop: 20}]}>
       <Text style={styles.resourceCategoryTitle}> Financial Instituition Aid</Text>
+      <ScrollView horizontal={true}>
+      <View style={[styles.linkMasterContainer, {marginTop:2}]}>
+        {/* Financial Instituition Aid: IMAGE 1: ____________ */}
+        <TouchableOpacity onPress={handlePress}>
+        <View style={[styles.linkSingleContainer, {marginTop:2}]}>
+          <Text style={styles.linkSingleTitle}> ____________ </Text>
+          <Image source={imageSource} style={styles.image} />
+        </View>
+        </TouchableOpacity>
+      </View>
+      </ScrollView>
     </View>
+
+    {/* ------------------------------------------------------------- */}
 
     <View style={[styles.resourceContainer, { marginTop: 20, marginBottom: 200, height: containerHeight}]}>
       <Text style={styles.resourceCategoryTitle}> Other</Text>
+      <ScrollView horizontal={true}>
+      <View style={[styles.linkMasterContainer, {marginTop:2}]}>
+        {/* Other: IMAGE 1: ____________ */}
+        <TouchableOpacity onPress={handlePress}>
+        <View style={[styles.linkSingleContainer, {marginTop:2}]}>
+          <Text style={styles.linkSingleTitle}> ____________ </Text>
+          <Image source={imageSource} style={styles.image} />
+        </View>
+        </TouchableOpacity>
+      </View>
+      </ScrollView>
     </View>
 
     </ScrollView>
