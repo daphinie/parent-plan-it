@@ -11,7 +11,7 @@ function TabNav(){
         <tab.Navigator initialRouteName="home">
             <tab.Screen name="home" component={Home}></tab.Screen>
             <tab.Screen name="resources" component={Resources}></tab.Screen>
-            <tab.Screen name="your info" component={BasicInfo}></tab.Screen>
+            <tab.Screen name="Your Profile" component={BasicInfo}></tab.Screen>
         </tab.Navigator>
     )
 }
