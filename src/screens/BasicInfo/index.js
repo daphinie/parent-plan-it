@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, Button } from 'react-native';
+import { View, Text, TextInput, StyleSheet, Button, Image, TouchableOpacity } from 'react-native';
 import { useFonts } from 'expo-font';
 
 export default function InfoPage() {
@@ -29,7 +29,9 @@ export default function InfoPage() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>About You</Text>
+      <View style={styles.header}>
+      <Image source={require('../../../assets/Avatar.png')} style = {styles.icon}/>
+      </View>
 
       <Text style={[styles.labelinput, styles.textColor]}>First Name:</Text>
       <TextInput
@@ -90,14 +92,16 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FFFFFF'
   },
   title: {
-    fontSize: 37,
-    //fontFamily: 'PTSans',
-    fontWeight: 'bold',
-    marginBottom: 20,
     color: '#49416D',
+    fontSize: 33,
+    fontWeight: 'bold',
+    //paddingHorizontal: 25,
+    paddingVertical: 20,
+    borderRadius: 15,
+    marginRight: 20, 
+    paddingHorizontal: 10,
   },
   label: {
     fontSize: 18,
@@ -109,6 +113,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     backgroundColor: '#F5F5F5',
     marginLeft : 10,
+    marginBottom : 10,
     paddingHorizontal: 10,
     //fontFamily: 'PTSans',
     textAlign: 'left',
@@ -120,6 +125,7 @@ const styles = StyleSheet.create({
     width: 375,
     height: 30,
     borderRadius : 20,
+    backgroundColor: '#F5F5F5',
     marginBottom: 0,
     marginTop: 10,
     marginLeft : 0,
@@ -136,13 +142,28 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     paddingHorizontal: 10,
   },
+  icon: {
+    width: 80,
+    height: 80,
+    marginRight: 20,
+    marginLeft: 15,
+    marginTop: 20,
+  },
+  header: {
+    color: '#49416D',
+    fontSize: 33,
+    paddingHorizontal: 12,
+    fontWeight: 'bold',
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: 250,
+  },
   button: {
     fontSize: 20,
     fontWeight: 'bold',
     width: 375,
     height: 30,
     borderRadius : 20,
-    backgroundColor: '#F5F5F5',
     marginBottom: 30,
     marginTop: 30,
     marginLeft : 0,
