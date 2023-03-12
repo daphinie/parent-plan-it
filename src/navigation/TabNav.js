@@ -9,13 +9,18 @@ const tab = createBottomTabNavigator();
 
 function TabNav(){
     return (
-        <tab.Navigator initialRouteName="home">
+        <tab.Navigator
+            initialRouteName="home"
+            tabBarOptions={{
+                activeBackgroundColor: '#99AEDD'
+            }}
+        >
             <tab.Screen 
               name="Goals" 
               component={Home} 
               options={{
                 tabBarIcon: ({ focused, color, size }) => (
-                  <Image ta
+                  <Image 
                     source={require('../../assets/goaltab.png')} 
                     style={{ width: size, height: size }} 
                     resizeMode="contain" 
@@ -29,7 +34,7 @@ function TabNav(){
               options={{
                 tabBarIcon: ({ focused, color, size }) => (
                   <Image 
-                    source={require('../../assets/resources active.png')} 
+                    source={require('../../assets/resourcesactive.png')} 
                     style={{ width: size, height: size }} 
                     resizeMode="contain" 
                   />
@@ -40,9 +45,9 @@ function TabNav(){
               name="Profile" 
               component={BasicInfo} 
               options={{
-                tabBarIcon: ({ focused, color, size }) => (
+                tabBarIcon: ({ focused, color = '#99AEDD', size }) => (
                   <Image 
-                    source={require('../../assets/profile active.png')} 
+                    source={require('../../assets/profileactive.png')} 
                     style={{ width: size, height: size }} 
                     resizeMode="contain" 
                   />
