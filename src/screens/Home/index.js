@@ -18,7 +18,7 @@ const Home = () => {
     <View style={styles.container}>
 
       <View>
-        <Text style={styles.header}>Goals</Text>
+        <Text style={styles.header}>Add Your Goals</Text>
 
         <View style={styles.addGoalContainer}>
           <Pressable style={styles.button}>
@@ -28,7 +28,11 @@ const Home = () => {
       </View>
       
       <View style={styles.card}>
-        <Text style={styles.header}>Current</Text>
+        <View>
+
+          <Text style={styles.goalHeader}>John's Education</Text>
+        </View>
+        
       </View>
 
       
@@ -61,6 +65,12 @@ const styles = StyleSheet.create({
     fontFamily: 'PTSans',
     color: '#49416D',
     fontSize: 30,
+  },
+
+  goalHeader: {
+    fontFamily: 'PTSans',
+    color: '#49416D',
+    fontSize: 25,
   },
 
   button: {
