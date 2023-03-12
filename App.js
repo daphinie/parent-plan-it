@@ -1,12 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Providers from './src/navigation';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome to Parent Plan it!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Providers/>
   );
 }
 
