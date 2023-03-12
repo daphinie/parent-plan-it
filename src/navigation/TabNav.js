@@ -9,9 +9,9 @@ const tab = createBottomTabNavigator();
 function TabNav(){
     return (
         <tab.Navigator initialRouteName="home">
-            <tab.Screen name="home" component={Home}></tab.Screen>
-            <tab.Screen name="resources" component={Resources}></tab.Screen>
-            <tab.Screen name="Your Profile" component={BasicInfo}></tab.Screen>
+            <tab.Screen name="Goals" component={Home}></tab.Screen>
+            <tab.Screen name="Resources" component={Resources}></tab.Screen>
+            <tab.Screen name="Profile" component={BasicInfo}></tab.Screen>
         </tab.Navigator>
     )
 }
