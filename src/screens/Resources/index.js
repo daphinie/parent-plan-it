@@ -23,7 +23,7 @@ const containerHeight = 225;
 const handlePress = () => {
   Linking.openURL('https://studentaidbc.ca/sabc-home-page'); // Replace with your own link URL
 };
-const imageSource = require('../../../assets/logo.png');
+const imageSource = require('../../../assets/Aerrow.png');
 //'./assets/logo.png'
 const Resources = () => {
 
@@ -144,11 +144,11 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    width: 60,
-    height: 60,
+    width: 35,
+    height: 35,
     position: 'absolute',
-    bottom: 2,
-    right: 2,
+    bottom: 6,
+    right: 6,
   },
 
 
