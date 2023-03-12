@@ -29,7 +29,7 @@ export default function InfoPage() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>About you</Text>
+      <Text style={styles.title}>About You</Text>
 
       <Text style={[styles.labelinput, styles.textColor]}>First Name:</Text>
       <TextInput
