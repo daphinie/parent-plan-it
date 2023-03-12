@@ -31,7 +31,7 @@ const Resources = () => {
 
     <View style={styles.container}>
       <ScrollView contentOffset={{y: containerHeight}}>
-      <Text style={[styles.header, {marginTop:2}]}> Your Financial Resources </Text>
+      <Text style={[styles.header, {marginTop:2}]}> Your Financial {'\n'} Resources </Text>
 
 
     {/* ------------------------------------------------------------- */}

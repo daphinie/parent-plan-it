@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#FFFFFF'
   },
   title: {
     fontSize: 37,
@@ -119,7 +120,6 @@ const styles = StyleSheet.create({
     width: 375,
     height: 30,
     borderRadius : 20,
-    backgroundColor: '#F5F5F5',
     marginBottom: 0,
     marginTop: 10,
     marginLeft : 0,
