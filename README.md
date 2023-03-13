@@ -9,5 +9,5 @@ Single-parent families are commonly at higher financial risk compared to two-par
 ### How we built it
 React Native, Expo
 
-###Link to Devpost:
+### Link to Devpost:
 https://devpost.com/software/parent-plan-it?ref_content=user-portfolio&ref_feature=in_progress
